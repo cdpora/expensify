@@ -1,6 +1,5 @@
 //import * as firebase from 'firebase'
 const firebase = require('firebase');
-console.log('firebase',firebase)
 const config = {
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,
