@@ -21,8 +21,11 @@ const config = {
   firebase.initializeApp(config)
 
   const database = firebase.database()
+  const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
 
-  export {firebase, database as default} 
+  export {firebase,googleAuthProvider, database as default} 
+
+
   // database.ref -> is a reference to the root of the DB
 //   database.ref().set({
 //       name: 'Asca Arop',
